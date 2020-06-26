@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunas</title>
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script src="js/calendario.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h3>LOGO</h3>
+        </div>
+        <div class="buscador_header">
+            <label for="buscador"></label>
+            <input type="text" name="buscador" placeholder="Filtro por enfermedad" list="lista">
+            <datalist id="lista">
+                <option><a href="covid-19.html">COVID-19</a></option>
+                <option>Fiebre del Zika</option>
+                <option>Fiebres Hemorrágicas</option>
+                <option>Gripe</option>
+                <option>VIH / Sida</option>
+            </datalist>
+        </div>
+    </header>
+
+    <main>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"> Inicio </a></li>
+                <li><a href="enfermedades.html"> Enfermedades </a></li>
+                <li><a href="vacunas.html">Vacunas</a></li>
+                <li><a href="hospitales.html"> Hospitales </a></li>
+                <li><a href="contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+        </section>
+        <section class="vacunas_calendario">
+            <article id="calendar"></article>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav class="datos">
+            <h4 class="letra">Datos del grupo:</h4>
+            <p> Iv&aacute;n Kek <br> 42225201</p>
+            <br>
+            <p> Santiago Fagliano <br> 43103929</p>
+        </nav>
+
+        <nav class="menuinferior">
+            <h4>Men&uacute; inferior:</h4>
+            <br>
+            <p><a href="index.html">Inicio</a></p>
+            <p><a href="enfermedades.html">Enfermedades</a></p>
+            <p><a href="vacunas.html">Vacunas</a></p>
+            <p><a href="hospitales.html">Hospitales</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+
+        </nav>
+
+        <nav>
+            <h4 class="letra">Redes sociales:</h4>
+            <div class="redes">
+                <a href="https://www.instagram.com/"><img class="logitos" src="img/logo_insta.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/"><img class="logitos" src="img/logo_facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img class="logitos" src="img/logo_twitter.png" alt="Twitter"></a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>

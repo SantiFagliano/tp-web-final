@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgba(0, 70, 152, 0.87);
+    text-transform: uppercase;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    padding: 0px 0em;
+}
+
+header input {
+    padding: 9px;
+    width: 300px;
+}
+
+header div h3 {
+    color: #fff;
+    padding: 20px 55px;
+}
+
+.menu_bar {
+    display: none;
+}
+
+footer {
+    background-color: rgba(0, 70, 152, 0.87);
+    margin-top: 20px;
+    padding: 28px 40px;
+    justify-content: space-around;
+    color: aliceblue;
+    display: flex;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+}
+
+footer h4 {
+    font-weight: bold;
+}
+
+footer nav {
+    padding: 4px 10px 0 10px;
+    margin: 0 10px;
+}
+
+h3 {
+    color: #004698;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.menu ul li {
+    list-style: none;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.menu ul li a {
+    color: #fff;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 7px;
+}
+
+.menu ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.contenedora1 {
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 2px;
+}
+
+.contenedora2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagenCircular {
+    height: 160px;
+    width: 160px;
+    border-radius: 150px;
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.66);
+    box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.66);
+}
+
+.vinculosCircular {
+    margin: 15px;
+    background-color: #004698de;
+    color: #f0f8ff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    -webkit-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.66);
+    box-shadow: 10px 10px 14px 0px rgba(0, 0, 0, 0.66);
+}
+
+.vinculosCircular a {
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+.vinculosCircular a:hover {
+    text-decoration: underline;
+    color: #8cb5da;
+}
+
+.contenedora3 {
+    background-color: #004698de;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.contenedora3 h4 {
+    font-size: 120px;
+}
+
+.contenedora3 h6 {
+    font-size: 88px;
+    font-weight: bold;
+}
+
+.contenedora3 p {
+    font-size: 30px
+}
+
+.contenedora3 i {
+    font-size: 100px;
+}
+
+.buscador {
+    text-align: center;
+}
+
+.buscador input {
+    width: 350px;
+    padding: 4px;
+    border-width: 2px;
+    -webkit-box-shadow: 4px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.enfermedades {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+    text-align: justify;
+}
+
+.enfermedades p {
+    margin: 10px 0px;
+}
+
+.imagenEnfermedades {
+    height: 140px;
+    width: 200px;
+    margin: 0px 20px;
+}
+
+.verDetalle {
+    width: 100px;
+    margin-top: 70px;
+    text-decoration: none;
+    background-color: rgba(0, 70, 152, 0.87);
+    color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+}
+
+.contenedora4 {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.contenedora4 article img {
+    height: 202px;
+    border-radius: 5px;
+}
+
+.texto {
+    text-align: justify;
+    padding: 0em 1em;
+}
+
+.texto_coronavirus img {
+    padding: 25px;
+    height: 120px;
+}
+
+.contenedora5 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0px 130px;
+}
+
+.contenedora5 p {
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.img_covid {
+    text-align: center;
+}
+
+.formulario {
+    max-width: 100%;
+}
+
+.formulario {
+    margin: 4px 0px;
+}
+
+.contenedora5 .nombre input {
+    width: 500px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 4px;
+    margin-bottom: -10px;
+    border-radius: 5px;
+}
+
+.contenedora5 .dni input {
+    margin-right: 13px;
+    width: 230px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+.contenedora5 .telefono input {
+    margin-left: 11px;
+    width: 230px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+.contenedora5 .ciudad input {
+    margin-right: 24px;
+    width: 230px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+.sexo input {
+    margin-top: 10px;
+}
+
+.viajado {
+    margin: 10px 0px;
+}
+
+.paises select {
+    width: 250px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.sintomas {
+    font-size: 25px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.contenedora5 .ciudad2 input {
+    margin-left: 13px;
+    width: 230px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+.contenedora5 .direccion input {
+    margin-right: 11px;
+    width: 230px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+.juntos {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin: 4px 0px;
+}
+
+.enviarboton {
+    text-align: right;
+}
+
+#enviar {
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(0, 70, 152, 0.87);
+    width: 7em;
+    border-radius: 5px;
+    padding: 0.6em;
+    margin-top: 1em;
+}
+
+.quehacer {
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+}
+
+.quehacer img {
+    margin: 10px 40px;
+    width: 200px;
+}
+
+.masCercano {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.masCercano article {
+    width: 40%;
+}
+
+.masCercano article p {
+    margin: 5px 0px;
+}
+
+.masCercano article img {
+    width: 200px;
+}
+
+.masCercano iframe {
+    width: 100%;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 80px;
+}
+
+.contacto input {
+    width: 370px;
+    padding: 7px;
+    border-color: #aaa8a8;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+.contacto textarea {
+    font-family: roboto;
+    padding: 10px;
+    border-color: #aaa8a8;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.contacto .boton {
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(0, 70, 152, 0.87);
+    width: 80px;
+    border-radius: 5px;
+}
+
+.contacto img {
+    width: 25px;
+    padding: 10px;
+}
+
+.letra {
+    margin-bottom: 10px;
+}
+
+.menuinferior p {
+    margin-bottom: 10px;
+}
+
+.menuinferior a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.menuinferior a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.logitos {
+    height: 35px;
+}
+
+.mapa {
+    text-align: center;
+    max-width: 100%;
+}
+
+.mapa p {
+    margin-bottom: 1em;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.vacunas_calendario {
+    width: 90%;
+    margin: auto;
+}
+
+.terapia {
+    text-align: center;
+}
+
+.terapia li {
+    text-decoration: none;
+}
+
+.terapia a {
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.terapia a:hover {
+    color: #004698;
+    text-decoration: underline;
+}
+
+.terapia p {
+    margin: 1em;
+}
+
+.popup1,
+.popup2,
+.popup3 {
+    background-color: #559ae9;
+    width: 40%;
+    text-align: center;
+    position: fixed;
+    padding: 15px;
+    top: 100px;
+    left: 100px;
+    display: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:700px) {
+    .enfermedades {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .buscador_header {
+        display: none;
+    }
+    .menu {
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+        z-index: 101;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+    .menu_bar {
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+    .menu_bar .bt-menu {
+        border-top: #000 solid 2px;
+        display: block;
+        padding: 20px 40px;
+        background: #004698;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+    .imagenCircular {
+        width: 120px;
+        height: 120px;
+    }
+    .contenedora3 h4 {
+        font-size: 70px;
+    }
+    .contenedora3 h6 {
+        font-size: 30px;
+        font-weight: normal;
+    }
+    .contenedora3 p {
+        font-size: 30px
+    }
+    .contenedora3 i {
+        font-size: 70px;
+    }
+    .buscador input {
+        width: 90%;
+        margin: auto;
+    }
+    .masCercano {
+        flex-direction: column;
+        margin: auto;
+    }
+    .masCercano article {
+        width: 100%;
+        text-align: center;
+    }
+    .masCercano iframe {
+        width: 80%;
+        margin-top: 2em;
+    }
+    .quehacer {
+        margin: auto;
+        align-items: center;
+    }
+    .quehacer img {
+        width: 120px;
+        margin: 5px 10px;
+    }
+    .datos_mapa {
+        width: 95%;
+        margin: auto;
+    }
+    .mapa_contacto iframe {
+        width: 100%;
+        margin: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contenedora4 {
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+    .contenedora4 article {
+        margin: 1em 0em;
+    }
+    .contenedora5 {
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+    .texto_coronavirus img {
+        height: auto;
+        width: 140px;
+    }
+    .contenedora5 .nombre input {
+        width: 50%;
+    }
+    .juntos {
+        flex-direction: column;
+    }
+    .juntos nav {
+        margin-bottom: 1em;
+    }
+    .contenedora5 .telefono input {
+        margin-left: 0px;
+    }
+}

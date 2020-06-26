@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIH Sida</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/funcionalidadCoronavirus.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h3>LOGO</h3>
+        </div>
+        <div class="buscador_header">
+            <label for="buscador"></label>
+            <input type="text" name="buscador" placeholder="Filtro por enfermedad" list="lista">
+            <datalist id="lista">
+                <option><a href="covid-19.html">COVID-19</a></option>
+                <option>Fiebre del Zika</option>
+                <option>Fiebres Hemorrágicas</option>
+                <option>Gripe</option>
+                <option>VIH / Sida</option>
+            </datalist>
+        </div>
+    </header>
+
+    <main>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html"> Inicio </a></li>
+                <li><a href="enfermedades.html"> Enfermedades </a></li>
+                <li><a href="vacunas.html">Vacunas</a></li>
+                <li><a href="hospitales.html"> Hospitales </a></li>
+                <li><a href="contacto.html"> Contacto </a></li>
+            </ul>
+        </nav>
+        </section>
+
+        <h3>VIH (Sida)</h3>
+
+        <section class="contenedora4">
+            <article>
+                <img src="img/vih-1.jpg" alt="Coronavirus" id="imagenCorona">
+            </article>
+
+            <article class="texto">
+                VIH significa virus de la inmunodeficiencia humana. Éste daña el sistema inmunitario mediante la destrucción de los glóbulos blancos que combaten las infecciones. Esto lo pone en riesgo de contraer infecciones graves y ciertos tipos de cáncer.
+                <br>Sida significa síndrome de inmunodeficiencia adquirida. Es la etapa final de la infección con el VIH. No todas las personas con VIH desarrollan sida. El VIH suele contagiarse a través de relaciones sexuales sin protección con una persona
+                infectada.
+                <br>También puede propagarse por intercambio de agujas para inyectarse drogas o por contacto con la sangre de una persona infectada.
+            </article>
+        </section>
+
+        <h3>FORMULARIO DE DETECCI&Oacute;N (TEST) DE CORONAVIRUS (COVID19)</h3>
+
+        <section class="contenedora5">
+
+            <article class="texto_coronavirus">
+                <p>¡Hola usuario! Si tienes s&iacute;ntomas de COVID-19 o has estado en contacto con una persona afectada deber&iacute;as hacer un control y seguimiento diario de tus s&iacute;ntomas.<br><br> Esta aplicaci&oacute;n te permitir&aacute; hacer
+                    un seguimiento de la evoluci&oacute;n de los s&iacute;ntomas y te dará las indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptaci&oacute;n de los t&eacute;rminos y la pol&iacute;tica de privacidad
+                    descritos en 'Ver las condiciones y pol&iacute;ticas'
+                </p>
+
+                <h4 class="sintomas">SÍNTOMAS</h4>
+
+                <div class="img_covid">
+                    <img src="img/23-fiebre-tos.png" alt="">
+                    <img src="img/24-fiebre-dolor-garganta.png" alt=""> <br>
+                    <img src="img/25-fiebre-dificultad-respirar.png" alt="">
+                </div>
+            </article>
+
+            <article class="formulario">
+                <form action="#" onsubmit="return validar()" name="form">
+
+                    <div class="nombre">
+                        <label for="nombre"> Nombre y Apellido/s <br> </label>
+                        <input type="text" name="nombre" id="nombre"> <br> <br>
+                    </div>
+
+                    <div class="juntos">
+
+                        <nav class="dni">
+                            <label for="dni"> DNI <br> </label>
+                            <input type="text" name="dni" id="dni">
+                        </nav>
+                        <nav class="telefono">
+                            <label for="telefono">Telefono <br></label>
+                            <input type="text" name="telefono" id="telefono">
+                        </nav>
+
+                    </div>
+
+                    <div class="juntos">
+
+                        <nav class="ciudad">
+                            <label for="ciudad">Ciudad <br> </label>
+                            <input type="text" id="ciudad" name="ciudad">
+                        </nav>
+                        <nav class="sexo">
+                            <label for="sexo">Sexo <br> </label> M <input type="radio" id="masculino" name="sexo" value="masculino"> F <input type="radio" id="femenino" name="sexo" value="femenino">
+                        </nav>
+
+                    </div>
+
+                    <div class="viajado">
+                        <label for="viajado">¿Has viajado al exterior de la Rep&uacute;blica Argentina?</label> SI
+                        <input type="radio" name="viajado" id="si" value="si" onchange="cambiar()"> NO
+                        <input type="radio" name="viajado" id="no" value="no" onchange="cambiar()">
+                    </div>
+
+                    <div class="paises" id="paises">
+                        <label for="paises">Pa&iacute;ses visitados</label>
+                        <select name="paises" id="paises">
+
+                            <option value="seleccione" selected>Seleccione</option>
+                            <option value="usa">Estados Unidos</option>
+                            <option value="inglaterra">Inglaterra</option>
+                            <option value="españa">España</option>
+                            <option value="francia">Francia</option>
+                            <option value="italia">Italia</option>
+
+                        </select> <br><br>
+
+                    </div>
+
+                    <h4>Por favor, indica los s&iacute;ntomas que presentas:</h4>
+
+                    <div>
+                        <br>
+                        <label for="fiebre">¿Tuviste fiebre mayor a 38 grados?</label> Si <input type="radio" id="si" name="fiebre" value="si"> No <input type="radio" id="no" name="fiebre" value="no">
+                        <br><br>
+                        <label for="dolor">¿Tuviste dolor de cabeza?</label> Si <input type="radio" id="si" name="dolor" value="si"> No <input type="radio" id="no" name="dolor" value="no"> <br><br>
+
+                        <label for="tos">¿Tuviste una tos persistente?</label> Si <input type="radio" id="si" name="tos" value="si"> No <input type="radio" id="no" name="tos" value="no"> <br><br>
+
+                        <label for="garganta">¿Tuviste dolor de garganta?</label> Si <input type="radio" id="si" name="garganta" value="si"> No <input type="radio" id="no" name="garganta" value="no">
+                        <br><br>
+
+                        <label for="respirar">¿Tuviste dificultad para respirar?</label> Si <input type="radio" id="si" name="respirar" value="si" onchange="mostrarDireccion()"> No <input type="radio" id="no" name="respirar" value="no" onchange="mostrarDireccion()">
+                        <br><br>
+                    </div>
+                    <div class="juntos" id="ocultado">
+                        <nav id="ocultado" class="direccion">
+                            <label for="direccion">Direcci&oacute;n</label>
+                            <input type="text" id="direccion" name="direccion">
+                        </nav>
+
+                        <nav id="ocultado" class="ciudad2">
+                            <label for="ciudad2">Ciudad</label>
+                            <input type="text" id="ciudad2" name="ciudad2">
+                        </nav>
+                    </div>
+                    <div class="enviarboton">
+                        <input id="enviar" type="submit" value="Enviar Test">
+                    </div>
+                    <br>
+                    <div id="mensaje" class="error"> </div>
+
+                </form>
+            </article>
+
+        </section>
+
+        <h3>MEDIDAS DE PRECAUCI&Oacute;N</h3>
+
+        <section class="quehacer">
+            <img src="img/14-lavarse-manos.png" alt="lavarse">
+            <img src="img/15-estornudar.png" alt="estornudar">
+            <img src="img/16-tocar-nariz.png" alt="nariz">
+            <img src="img/17-ventilar.png" alt="ventilar">
+            <img src="img/18-limpiar-objetos.png" alt="objetos">
+            <img src="img/19-permanecer-domicilio.png" alt="domicilio">
+            <img src="img/20-reducir-contacto.png" alt="contacto">
+            <img src="img/21-no-compartir-mate.png" alt="mate">
+        </section>
+
+        <h3>HOSPITAL M&Aacute;S CERCANO ESPECIALIZADO EN LA ENFERMDEDAD</h3>
+
+        <section class="masCercano">
+            <article>
+                <h4>Sanatorio de los Arcos</h4>
+                <p>Tel&eacute;fono: 011 4778-4500 </p>
+                <p>Direcci&oacute;n: Av. Juan B. Justo 909 </p>
+                <p>Ciudad: Ciudad Autónoma de Buenos Aires</p>
+                <img src="img/imagen15g.jpg" alt="Hospital Sanatorio de los Arcos">
+            </article>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.8995566466474!2d-58.429920164410234!3d-34.5814079951919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59003dca6b7%3A0x5d707472e25e3e44!2sDe%20Los%20Arcos!5e0!3m2!1ses-419!2sar!4v1591224801759!5m2!1ses-419!2sar"
+                    width="700" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="mapahospi"></iframe>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <nav class="datos">
+            <h4 class="letra">Datos del grupo:</h4>
+            <p> Iv&aacute;n Kek <br> 42225201</p>
+            <br>
+            <p> Santiago Fagliano <br> 43103929</p>
+        </nav>
+
+        <nav class="menuinferior">
+            <h4>Men&uacute; inferior:</h4>
+            <br>
+            <p><a href="index.html">Inicio</a></p>
+            <p><a href="enfermedades.html">Enfermedades</a></p>
+            <p><a href="vacunas.html">Vacunas</a></p>
+            <p><a href="hospitales.html">Hospitales</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+
+        </nav>
+
+        <nav>
+            <h4 class="letra">Redes sociales:</h4>
+            <div class="redes">
+                <a href="https://www.instagram.com/"><img class="logitos" src="img/logo_insta.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/"><img class="logitos" src="img/logo_facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/"><img class="logitos" src="img/logo_twitter.png" alt="Twitter"></a>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
